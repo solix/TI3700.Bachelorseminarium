@@ -1,0 +1,29 @@
+NN & decision tree comparison
+---------------------------------------------------
+Automatic decision support system based on SAR data for oil spill detection
+David Meraa, José M. Cotosb, José Varela-Petc, Pablo G. Rodríguezd, Andrés Carod
+Computers & Geosciences Volume 72, November 2014, Pages 184–191
+
+Geological mapping using remote sensing data: A comparison of five
+machine learning algorithms, their response to variations in the spatial
+distribution of training data and the use of explicit
+spatial information
+Matthew J. Cracknell n, Anya M. Reading 2013
+(ook svm)
+
+A comparative study of different classification techniques for marine oil spill identification using RADARSAT-1 imagery
+Linlin Xua, Jonathan Lia, b, Alexander Brenninga
+Remote Sensing of Environment Volume 141, 5 February 2014, Pages 14–23
+(ook svm)
+
+Neural networks, decision tree induction and discriminant analysis: An empirical comparison
+SP Curram, J Mingers
+Journal of the Operational Research Society, 1994
+
+
+decision tree
+------------------------------------------------
+Oil spill feature selection and classification using decision tree forest on SAR image data
+Konstantinos Topouzelisa, Apostolos Psyllosb
+ISPRS Journal of Photogrammetry and Remote Sensing
+Volume 68, March 2012, Pages 135–143
