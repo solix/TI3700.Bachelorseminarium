@@ -45,7 +45,7 @@
 \renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
 \renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
 \titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
-\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\small}{\thesubsection.}{1em}{} % Change the look of the section titles
 
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers
@@ -61,16 +61,10 @@
 \title{\vspace{-15mm}\fontsize{18pt}{10pt}\selectfont\textbf{A comparison of supervised learning classifiers for oil spill detection}} % Article title
 
 \author{
-A.S.Y.Chiu  \and
-     \and T.P.van Helden
-   \and S.S.Jahanshahi
+A.S.Y.Chiu \\ \scriptsize{[Andy's TU email]@student.tudelft.nl}  \and
+     \and T.P.van Helden \\ \scriptsize{[Thomas's TU email]@student.tudelft.nl}
+   \and S.S.Jahanshahi\\ \scriptsize{S.S.Jahanshahi@student.tudelft.nl}
 }
-
-%\email{                    This didnt compile
-%A.S.Y.Chiu@something.com  \and
-%     \and T.P.van Helden@gmail.com
-%   \and S.S.Jahanshahi@something.com
-%}
 
 \date{}
 
@@ -132,34 +126,28 @@ A.S.Y.Chiu  \and
 %------------------------------------------------
 
 \section{Comparison of classifiers}
-
+\subsection{SVM Vs DT} % (fold)
 \input{./sections/9.SVM-vs-DT.tex}
-
-%\input{./sections/10.SVM-vs-MLP.tex}
-
+\subsection{SVM Vs MLP} % (fold)
+\input{./sections/10.SVM-vs-MLP.tex}
+\subsection{DT Vs MLP}
 %\input{./sections/11.DT-vs-MLP.tex}
 
 \section{Final words or conclusion}
 
 %\input{./sections/12.conclusion.tex}
+\end{multicols}
 
 \newpage
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
 
-\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
-
-\bibitem[Figueredo and Wolf, 2009]{Figueredo09}
-Figueredo, A.~J. and Wolf, P. S.~A. (2009).
-\newblock Assortative pairing and life history strategy - a cross-cultural
-  study.
-\newblock {\em Human Nature}, 20:317--330.
- 
-\end{thebibliography}
-
+\bibliographystyle{plain}
+\bibliography{refrences}
 %----------------------------------------------------------------------------------------
 
-\end{multicols}
+
+
 
 \end{document}
