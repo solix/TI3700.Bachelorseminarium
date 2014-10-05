@@ -1,0 +1,10 @@
+In order to classify oil candidates as either oil spills or look-alikes, features from dark spots are extracted and then compared to predefined values. Around 25 features are commonly used in the scientific community \cite{Topouzelis200930}. These can be divided into three major catagories\cite{Brekke200595}:
+\begin{enumerate}
+\item geometric characteristics (e.g. area, perimeter, complexity)
+\item Physical characteristics of the backscatter level of the spot and its surroundings (e.g. mean, max backscatter value)
+\item Contextual information (e.g. ships present, distance to shore)
+\item Texture (e.g. mean contrast)
+\end{enumerate}
+Most classifiers rely heavily on geometric shape features and the contextual feature.\cite{Xu201414} Researchers have tried to reduce the amount of features to counter the curse of dimensionality and the risk of overfitting. Features belonging to the same catagory 
+appear to be highly correlated\cite{Xu201414}, leading to the search for a subset of 
+features with less redundancy and retains most of the predicitive power\cite{Topouzelis200930}. 
