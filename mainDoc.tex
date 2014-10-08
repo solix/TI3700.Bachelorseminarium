@@ -48,6 +48,7 @@
 \titleformat{\subsection}[block]{\small}{\thesubsection.}{1em}{} % Change the look of the section titles
 
 \usepackage{graphicx}
+\usepackage{float}
 
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers
@@ -86,7 +87,6 @@ A.S.Y.Chiu \\ \scriptsize{[Andy's TU email]@student.tudelft.nl}  \and
 
   \input{./sections/0.abstract.tex}
 
-
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
@@ -101,48 +101,62 @@ A.S.Y.Chiu \\ \scriptsize{[Andy's TU email]@student.tudelft.nl}  \and
 
 %------------------------------------------------
 
-\section{Oil spill data}
+\section{Oil spill detection methods}
 
-%\input{./sections/2.oil-spill-problems.tex}
+	\input{./sections/2.oil-spill-methods.tex}
 
-\subsection{SAR images}
+\section{SAR preprocessing}
 
-	\input{./sections/4.oil-spill-SAR-data.tex}
+	\input{./sections/3.preprocessing.tex}
 
-\subsection{Features}
+\section{Features}
 	
-	\input{./sections/3.oil-spill-features.tex}
+	\input{./sections/4.oil-spill-features.tex}
 
 %------------------------------------------------
 
 \section{Classifier summary}
 
 \subsection{What is supervised learning}
-%\input{./sections/5.supervised-learning.tex}
+
+	\input{./sections/5.supervised-learning.tex}
 
 \subsection{Support Vector Machines}
-%\input{./sections/6.SVM-summary.tex}
+
+	\input{./sections/6.SVM-summary.tex}
 
 \subsection{Decision trees}
-%\input{./sections/7.DT-summary.tex}
+
+	\input{./sections/7.DT-summary.tex}
 
 \subsection{Multi Layer Perceptrons}
-\input{./sections/8.MLP-summary.tex}
+
+	\input{./sections/8.MLP-summary.tex}
 
 %------------------------------------------------
 
 \section{Comparison of classifiers}
-\subsection{SVM Vs DT} % (fold)
-\input{./sections/9.SVM-vs-DT.tex}
-\subsection{SVM Vs MLP} % (fold)
-\input{./sections/10.SVM-vs-MLP.tex}
+
+\subsection{SVM Vs DT}
+
+	\input{./sections/9.SVM-vs-DT.tex}
+
+\subsection{SVM Vs MLP}
+	
+	\input{./sections/10.SVM-vs-MLP.tex}
+
 \subsection{DT Vs MLP}
-\input{./sections/11.DT-vs-MLP.tex}
+
+	\input{./sections/11.DT-vs-MLP.tex}
 
 \section{Discussion}
-\section{Final words or conclusion}
 
-%\input{./sections/12.conclusion.tex}
+	\input{./sections/12.discussion.tex}
+
+\section{Conclusion}
+
+	\input{./sections/13.conclusion.tex}
+	
 \end{multicols}
 
 \newpage
@@ -151,7 +165,7 @@ A.S.Y.Chiu \\ \scriptsize{[Andy's TU email]@student.tudelft.nl}  \and
 %----------------------------------------------------------------------------------------
 
 \bibliographystyle{plain}
-\bibliography{refrences}
+\bibliography{references}
 %----------------------------------------------------------------------------------------
 
 
