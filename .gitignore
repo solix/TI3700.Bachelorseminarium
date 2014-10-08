@@ -33,3 +33,5 @@
 *.swp
 clean
 mainDoc.pdf
+mainDoc.bbl
+mainDoc.out
