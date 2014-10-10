@@ -10,6 +10,8 @@ An overview for the oil spill detection approach is shown in Fig. 1, these are t
     \label{fig:overview}
 \end{figure}
 
+Preprocessing the SAR image is done to improve the contrast between dark spots and the water surrounding them. This will make dark spot detection more easy. Through image segmentation, all dark spots are taken in isolation and the values of predefined features are extracted from them. Classification can now be performed by using the features as input where the output of the chosen classifier will be the probability of the dark spot being an oil spill or a lookalike. In an automated detection system, a high oil spill probability can lead to a warning message.
+
 
 
 
