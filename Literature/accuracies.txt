@@ -1,0 +1,87 @@
+Five issues have to be faced (Kubat et al., 1998) while dealing with oil spill detection problem in machine learning domain: the way examples are presented, imbalance of the dataset's class distribution, validity of the data selection, feature engineering problem and highly dynamic environment.
+
+Neural networks
+------------------------------------------------------------------
+Detection and discrimination between oil spills and look-alike phenomena through neural networks
+look alikes 39/45 correct = 86,87%
+oil spill 31/34 = 91,18%
+avarage = 88,61 accuracy
+
+Neural networks for oil spill detection using ERS-SAR data
+82% for real oil spills and 90% as look-alikes.
+
+Machine Learning for the Detection of Oil Spills in
+Satellite Radar Images
+goede argumenten geven ze waarom solberg and solberg 1996 betere resultaten dan zij hebben
+
+Investigation of genetic algorithms contribution to feature selection for
+oil spill detection
+87.34%
+
+Automatic detection of oil spills in ERS SAR images (statistical classifier)
+71 oil spills and 6,980 look-alikes.
+94% (67 out of 71) of oil spills and 99% (6,905 out of 6,980) of look-alikes using a leave-one-out approach.
+
+OIL SPILL DETECTION USING RBF NEURAL NETWORKS AND SAR DATA
+98.98% accuracy (questionable, no data set info)
+
+NEURAL NETWORK ALGORITHM FOR OIL SPILL AUTOMATIC DETECTION 
+FROM MULTI MODE RADARSAT-1 SAR SATELLITE DATA 
+99%
+
+Potentiality of feed-forward neural networks for classifying dark formations to oil spills and look-alikes
+99.49%
+
+Oil Spill Detection by SAR Images: Dark Formation Detection, Feature Extraction and Classification Algorithms
+Neural network classifiers are not very popular as they are rather complex and they require specific knowledge on the theory of neural systems. Their complexity relates with decisions on network family, network architecture, on the way the data are introduced during the training and the point where the training should stop. They considered reliable classifiers since they have the ability to learn during training.
+
+Oil spill detection by means of neural networks algorithms: a sensitivity analysis
+IEEE access needed
+
+A comparative study of different classification techniques for marine oil spill identification using RADARSAT-1 imagery
+75.19% 
+also accuracies given for svm and trees
+
+Automatic decision support system based on SAR data for oil spill detection
+92.9% (13/14) oil spills 96.3% (26/27) look-alike 95.1% global
+
+DECISION TREE
+---------------------------------------------------------------------------------------------
+
+
+A Large-Scale Evaluation of Features for Automatic Detection of Oil
+Spills in ERS SAR Images
+(decision tree)
+29 lookalikes, 44 oil spills
+
+Oil spill feature selection and classification using decision tree forest on SAR image data
+Decision Forest	SP2, P, Bpm, ConLa, GSd, SP1,NDm, ConRaSd, C	84.4%
+Decision Forest	All features	79.3%
+
+Automatic decision support system based on SAR data for oil spill detection
+92.9% (13/14) oil spills 92.6% (25/27) look-alike    92.6% global
+
+A comparative study of different classification techniques for marine oil spill identification using RADARSAT-1 imagery
+90.74% median (bundling technique)
+
+
+SVM
+---------------------------------------------------------------------------------------
+
+A comparative study of different classification techniques for marine oil spill identification using RADARSAT-1 imagery
+79.63
+
+Classifiers and Confidence Estimation for Oil Spill Detection in ENVISAT ASAR Images
+(34/41) oil spills 82,9%
+(9476/12244) look alikes 77,4%
+
+
+
+
+
+
+
+combination---------------------------------------------------------
+Automatic Synthetic Aperture Radar based oil spill detection and performance estimation via a semi-automatic operational service benchmark
+fuzzy logic and decision tree
+79.63% median
