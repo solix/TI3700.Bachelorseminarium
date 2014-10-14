@@ -2,8 +2,8 @@ Here is an overview of all the results of previously mentioned studies.
 
 \begin{table*}[t]
 \centering
-\setstretch{0.5}
-\tabcolsep=0.09cm
+\setstretch{1}
+\tabcolsep=0.19cm
 \footnotesize
 \begin{tabular}{*{6}{c}}
   Study & data type & Preprocessing & \# Features & formations & Results \\
@@ -34,7 +34,13 @@ Here is an overview of all the results of previously mentioned studies.
     Oil spills\cite{Topouzelis201268} &  ERS-2 SAR, 24 high-res images & - & 9 & 90 lookalikes and 69 oil spills & Decision tree forest $84.4$\%\\ 
     
     Oil spills\cite{brekke2008classifiers} & ENVISAT, 103 images & masking & - & 12244 lookalikes and 41 oil spills & SVM(C-SVC) $77.4$\% lookalike acc. $82.9$\% oil spill acc.\\
+
+    ECG arrhythmias\cite{Moavenian20103088} & MIT-BIH arrhythmia database & - & 10 & - & accuracy SVM 99\% , MLP 98.22\% \\
+
+    Remote Sensing\cite{Zanaty2012177} & Satimage & feature extraction & 26& - & accuracy for SVM 93.16\% ,and for MLP 96.98\%\\
     
+    signature recognition\cite{FriasMartinez2006693} & user signature data &feature extraction& 2 & - & Recognition rate SVM 66.5  , MLP 71.2\\
+    wind speed prediction\cite{Mohandes2004939}& daily wind speed data & - &high dimensional feature & - & MSE on testing data for the MLP is 0.0090 while it is 0.0078 for the SVM\\
     
     
 \end{tabular}
