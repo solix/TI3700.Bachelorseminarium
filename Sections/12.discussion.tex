@@ -21,7 +21,7 @@ There are some key issues for effectively classifying dark spots, several factor
     
     Oil spills\cite{Topouzelis200762} & ERS-2 SAR, 24 high-res images 8-bit & transformation, Filtering, data normalization & 10 & 90 lookalikes and 69 oil spills & MLP(10:51:2) accuracy: $86.67$\% lookalike acc. $91.18$\% oil spills acc.\\
     
-    Oil spills\cite{Delfrate200038} & ERS SAR, 600 low-res images & Resampling,Radiometric range correction, georeference & 11 & 68 lookalikes and 71 oil spills & MLP(11-8-4-1) accuracy: $90$\% lookalike acc. $82$\% oil spills acc. [leave-one-out approach]\\
+    Oil spills\cite{Delfrate200038} & ERS SAR, 600 low-res images & Resampling,Radiometric range correction, georeference & 11 & 68 lookalikes and 71 oil spills & MLP(11-8-4-1) accuracy: $90$\% lookalike acc. $82$\% oil spills acc.\\
     
     Oil spills\cite{Topouzelis200930} &  ERS-2 SAR, 24 high-res images & - & 10 & 90 lookalikes and 69 oil spills & MLP(10-51-2) accuracy: $84.4$\% lookalike acc. $85.3$\% oil spills acc.\\
     
@@ -47,7 +47,7 @@ There are some key issues for effectively classifying dark spots, several factor
     signature recognition\cite{FriasMartinez2006693} & user signature data &feature extraction& 2 & - & Recognition rate SVM 66.5  , MLP 71.2\\
     wind speed prediction\cite{Mohandes2004939}& daily wind speed data & - &high dimensional feature & - & MSE on testing data for the MLP is 0.0090 while it is 0.0078 for the SVM\\
     
-    Hashimoto's disease\cite{Omiotek201340} &  Thyroid ultrasound, 66 images & normalization & 59 & 54 healthy and 85 sick samples & MLP(6-8-1) accuracy: $89.41$\% sick class. acc. $61.11$\% healthy class. acc. Decison tree accuracy: $89.41$\% sick class. acc. $94.44$\% healthy class. acc. \\
+    Hashimoto's disease\cite{Omiotek201340} &  66 Thyroid ultrasound images & normalization & 59 & 54 healthy and 85 sick & MLP(6-8-1): $89.4$\% sick class $61.1$\% healthy class. DT: $89.4$\% sick class $94.4$\% healthy class. \\
     
     
 \end{tabular}
