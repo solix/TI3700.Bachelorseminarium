@@ -1,8 +1,9 @@
 In order to classify dark spots as either oil spills or lookalikes, features are extracted from them to calculate the probability for the two possible outcomes. A feature is an identified measurable property concerning the dark spot and which value has a strong statistical relationship with the classification output. Around 25 features are commonly used in the scientific community and can be found in the table \ref{fig:featuretable}.
 
-\begin{table*}[t]
-
-\adjustbox{max width=\textwidth}{
+\begin{table*}[t]{
+\footnotesize
+\tabcolsep=0.15cm
+\adjustbox{width=0.95\textwidth}{
 \begin{tabular}{*{4}{c}}
 	\hline
   No & type & Features & Code \\
@@ -36,9 +37,8 @@ In order to classify dark spots as either oil spills or lookalikes, features are
 }
 \caption{The 25 commonly used features\cite{Topouzelis201268}}
 \label{fig:featuretable}
-
+}
 \end{table*}
-
 
 The features be divided into three major categories\cite{Brekke200595}:
 \begin{enumerate}
