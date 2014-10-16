@@ -11,38 +11,38 @@ There are some key issues for effectively classifying dark spots, several factor
 
 %\adjustbox{max width=0.97\pdfpagewidth, left}{
 \begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio}
-\begin{tabular}{*{6}{l}}
+\begin{tabular}{*{6}{|l|}}
 
 \toprule[1.5pt]
-  Study & data type & Preprocessing & \# Features & formations & Results \\
+  \textbf{Study} & \textbf{Data Type} & \textbf{Preprocessing} & \# \textbf{Features} & \textbf{Formations(lookalike \& oilspills)} & \textbf{Results} \\
     \hline
   
     Hydro-acoustics \cite{Robotham2011170} & Sonar & Echoview & 15 &  - & SVM accuracy: $89.5$\%, DT accuracy: $86.8$\% \\
 
-    Land coverage1986 \cite{Otukei2010S27} & LandSat SAR & "Using data miner" & 11 &  - & SVM max accuracy: $90.53$\%, DT accuracy: $93.48$\% \\
+    Land coverage1986 \cite{Otukei2010S27} & LandSat SAR & `Using data miner' & 11 &  - & SVM max accuracy: $90.53$\%, DT accuracy: $93.48$\% \\
 
-    Land coverage2001 \cite{Otukei2010S27} & LandSat SAR & "Using data miner" & 10 &  - & SVM max accuracy: $93.67$\%, DT accuracy: $94.07$\% \\ 
+    Land coverage2001 \cite{Otukei2010S27} & LandSat SAR & `Using data miner' & 10 &  - & SVM max accuracy: $93.67$\%, DT accuracy: $94.07$\% \\ 
     
-    Oil spills\cite{Topouzelis200762} & ERS-2 SAR, 24 high-res images 8-bit & transformation, Filtering, data normalization & 10 & 90 lookalikes and 69 oil spills & MLP(10:51:2) accuracy: $86.67$\% lookalike acc. $91.18$\% oil spills acc.\\
+    Oil spills\cite{Topouzelis200762} & ERS-2 SAR, 24 high-res images 8-bit & transformation, Filtering, data normalization & 10 & 90  \& 69  & MLP(10:51:2) accuracy: $86.67$\% lookalike acc. $91.18$\% oil spills acc.\\
     
-    Oil spills\cite{Delfrate200038} & ERS SAR, 600 low-res images & Resampling,Radiometric range correction, georeference & 11 & 68 lookalikes and 71 oil spills & MLP(11-8-4-1) accuracy: $90$\% lookalike acc. $82$\% oil spills acc.\\
+    Oil spills\cite{Delfrate200038} & ERS SAR, 600 low-res images & Resampling,Radiometric range correction, georeference & 11 & 68  \& 71  & MLP(11-8-4-1) accuracy: $90$\% lookalike acc. $82$\% oil spills acc.\\
     
-    Oil spills\cite{Topouzelis200930} &  ERS-2 SAR, 24 high-res images & - & 10 & 90 lookalikes and 69 oil spills & MLP(10-51-2) accuracy: $84.4$\% lookalike acc. $85.3$\% oil spills acc.\\
+    Oil spills\cite{Topouzelis200930} &  ERS-2 SAR, 24 high-res images & - & 10 & 90 \& 69  & MLP(10-51-2) accuracy: $84.4$\% lookalike acc. $85.3$\% oil spills acc.\\
     
     Oil spills\cite{Topouzelis200924} &  ERS SAR, 12 high-res images & 8-bit transformation, filtering & - & - & MLP(4-2-1) accuracy: $96.46$\% overall acc. \\
  
-    Oil spills\cite{Delfrate2004} &  ERS SAR, 70 images & - & 12 & 78 lookalikes and 111 oil spills & MLP(12-8-8-1) 0.227 root mean square error(rmse)\\
+    Oil spills\cite{Delfrate2004} &  ERS SAR, 70 images & - & 12 & 78 \& 111  & MLP(12-8-8-1) 0.227 root mean square error(rmse)\\
     
-    Oil spills\cite{Xu201414} &  RADARSAT-1, 93 images & log-transformation, standardization & 15 & 94 lookalikes and 98 oil spills & MLP $75.93$\% overall acc. SVM $79.63$\% overall acc. DT(Bundling) 90.74 overall acc.\\
+    Oil spills\cite{Xu201414} &  RADARSAT-1, 93 images & log-transformation, standardization & 15 & 94  \& 98  & MLP $75.93$\% overall acc. SVM $79.63$\% overall acc. DT(Bundling) 90.74 overall acc.\\
     
-    Oil spills\cite{Mera201472} &  Envisat, 47 images & - & 9 & 155 lookalikes and 80 oil spills & MLP(9:11:2) $96.3$\% lookalike acc. $92.9$\% oil spill acc. \\
+    Oil spills\cite{Mera201472} &  Envisat, 47 images & - & 9 & 155  \& 80  & MLP(9:11:2) $96.3$\% lookalike acc. $92.9$\% oil spill acc. \\
     & & & & & DT $92.6$\% lookalike acc. $92.9$\% oil spill acc. \\
     
-    Oil spills\cite{Delfrate1996} &  ERS-1 SAR, 59 low-res images & - & 9 & 2471 lookalikes and 42 oil spills & DT $96$\% lookalike acc. $86$\% oil spill acc\\
+    Oil spills\cite{Delfrate1996} &  ERS-1 SAR, 59 low-res images & - & 9 & 2471 \& 42  & DT $96$\% lookalike acc. $86$\% oil spill acc\\
     
-    Oil spills\cite{Topouzelis201268} &  ERS-2 SAR, 24 high-res images & - & 9 & 90 lookalikes and 69 oil spills & DT forest $84.4$\%\\ 
+    Oil spills\cite{Topouzelis201268} &  ERS-2 SAR, 24 high-res images & - & 9 & 90  \& 69  & DT forest $84.4$\%\\ 
     
-    Oil spills\cite{brekke2008classifiers} & ENVISAT, 103 images & masking & - & 12244 lookalikes and 41 oil spills & SVM(C-SVC) $77.4$\% lookalike acc. $82.9$\% oil spill acc.\\
+    Oil spills\cite{brekke2008classifiers} & ENVISAT, 103 images & masking & - & 12244 \& 41  & SVM(C-SVC) $77.4$\% lookalike acc. $82.9$\% oil spill acc.\\
 
     ECG arrhythmias\cite{Moavenian20103088} & MIT-BIH arrhythmia database & - & 10 & - & accuracy SVM 99\% , MLP 98.22\% \\
 
