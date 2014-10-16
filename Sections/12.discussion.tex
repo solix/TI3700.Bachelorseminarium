@@ -5,11 +5,15 @@ There are some key issues for effectively classifying dark spots, several factor
 \advance\leftskip-3cm
 \setstretch{1.5}
 \tabcolsep=0.19cm
-\footnotesize
+\small
+\centering
 
-\adjustbox{max width=0.97\pdfpagewidth, left}{
 
-\begin{tabular}{*{6}{c}}
+%\adjustbox{max width=0.97\pdfpagewidth, left}{
+\begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio}
+\begin{tabular}{*{6}{l}}
+
+\toprule[1.5pt]
   Study & data type & Preprocessing & \# Features & formations & Results \\
     \hline
   
@@ -49,9 +53,10 @@ There are some key issues for effectively classifying dark spots, several factor
     
     Hashimoto's disease\cite{Omiotek201340} &  66 Thyroid ultrasound images & normalization & 59 & 54 healthy and 85 sick & MLP(6-8-1): $89.4$\% sick class $61.1$\% healthy class. DT: $89.4$\% sick class $94.4$\% healthy class. \\
     
+    \bottomrule[1.5pt]
     
 \end{tabular}
-}
+\end{adjustbox}
 \caption{An Overview of oil spill and related studies with their results and charateristics}
 \label{fig:table}
 \end{table*}

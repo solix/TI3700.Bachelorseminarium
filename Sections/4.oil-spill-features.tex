@@ -1,20 +1,20 @@
 In order to classify dark spots as either oil spills or lookalikes, features are extracted from them to calculate the probability for the two possible outcomes. A feature is an identified measurable property concerning the dark spot and which value has a strong statistical relationship with the classification output. Around 25 features are commonly used in the scientific community and can be found in the table \ref{fig:featuretable}.
 
-\begin{table*}[t]{
+\begin{minipage}[H]{0.28\linewidth} % A minipage that covers half the page 
 \footnotesize
-\tabcolsep=0.15cm
-\adjustbox{width=0.95\textwidth}{
-\begin{tabular}{*{4}{c}}
-	\hline
-  No & type & Features & Code \\
+\tabcolsep=0.09cm
+\centering
+\begin{tabular}{{l|ll|l}}
+	\toprule[1.5pt]
+  \textbf{No} & \textbf{type} & \textbf{Features} & \textbf{Code} \\
     \hline
-    1 & Geometrical & Area & A \\
+    1 & \textbf{Geometrical} & Area & A \\
     2 & & Perimeter & P \\
     3 & & Perimeter to area & ratio P/A \\
     4 & & Complexity & C \\
     5 & & Shape factor I & SP1 \\
     6 & & Shape factor II & SP2 \\
-    7 & Physical & Object mean value & OMe \\
+    7 & \textbf{Physical} & Object mean value & OMe \\
     8 & & Object standard deviation & OSd \\
     9 & & Object power to mean ratio & Opm \\
     10 & & Background mean value & BMe \\
@@ -30,15 +30,15 @@ In order to classify dark spots as either oil spills or lookalikes, features are
     20 & & Standard deviation border gradient & GSd \\
     21 & & Max border gradient & GMax \\
     22 & & Mean Difference to Neighbors & NDm \\
-    23 & Textural & Spectral texture & TSp \\
+    23 & \textbf{Textural} & Spectral texture & TSp \\
     24 & & Shape texture & TSh \\
     25 & & Mean Haralick texture & THm \\
+    \bottomrule[1.5pt]
 \end{tabular}
-}
-\caption{The 25 commonly used features\cite{Topouzelis201268}}
+%\caption{The 25 commonly used features\cite{Topouzelis201268}}
 \label{fig:featuretable}
-}
-\end{table*}
+\vspace{2cm}
+\end{minipage}
 
 The features be divided into three major categories\cite{Brekke200595}:
 \begin{enumerate}
