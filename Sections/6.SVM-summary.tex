@@ -3,17 +3,28 @@ In figure \ref{fig:SVM} main idea behind SVM is shown. Consider example dataset 
 
 \begin{figure}[H]
     \includegraphics[width=0.45\textwidth]{./img/SVM.png}
-     \caption{\footnotesize{SVM for separable binary set}}
+     \caption{\footnotesize{SVM for separable with the maximum margin for a given finite set of data }}
     \label{fig:SVM}
 \end{figure}
 
-%Klopt dit stuk? Heeft SVM geen last van curse of dimensionality? If so, misschien wat meer uitleg. Sowieso meer uitleg over de karakteristieken van SVM zou nice zijn. Dat kan goed gequote worden in de latere discussie.
-SVM are popular for couple of theoretical reasons: SVMs are robust to very large number of variables and can learn both simple and complex classification models \cite{cristianini2000}.\\
 
-%Ik snap niks van dit stuk, kan hier meer uitleg over?
-SVMs is a best known member in the general category of kernel methods \cite{shawe2004kernel}. A kernel method has the ability to generate non-linear decision boundaries by using method designed for linear classifiers. It turns out SVM does not need to work on higher-dimensional space implicitly because a kernel method rely on data through dot-products. Dot product can be replaced by kernel function which compute dot product in higher dimensional space. This allows the user to apply a classifier to data that has infinite- dimensional vector space representation such as DNA or protein \cite{ben2010user}.\\
-%Dank je :D
+SVM are popular for couple of theoretical reasons: SVMs classifiers are robust to very large number of variables. They have strong founding theory and need less memory to store the predictive model; Even when training sample has some bias, If the right parameters are chosen for SVM, then it can be robust\cite{auria2008support} and can learn both simple and complex classification models \cite{cristianini2000}. 
 
-In recent years, SVMs are widely used in bio-informatics \cite{furey2000support,osuna1997training,guyon2002gene} and other disciplines due to its ability to accurately deal with high dimensional data\cite{joachims1998text}. In marine environments, researchers have proposed a method for detection of oil spills in SAR images, using SVM  as a classifier. 
-%Heeft SVM extra veel last van noise?? Volgens mij kan elke classifier wel baat hebben bij noise reduction....
-The result of this research has shown that SVM has better performance on SAR image when using texture analysis and decomposition algorithm in various steps of the SVM algorithm. Texture analysis will help to reduce noise in SAR image \cite{matkan2013oil}.
+
+SVMs is a best known member in the general category of kernel methods. Kernel methods are class of algorithms for pattern analysis which can operate on general type of data(e.g strings, vector,text) and looks for general relations between data points (ranking ,classification, clusters). The modular framework of Kernel Methods is shown in figure\ref{fig:Kernel}. In First step data points are processed in a vector space(kernel matrix) through a mapping function(kernel function). In the second step, different kernel algorithms can be used in order to analyze the data, using only the information that resides in the kernel matrix. \cite{shawe2004kernel}\\
+
+%This allows the user to apply a classifier to data that has infinite- dimensional vector space representation such as DNA or protein \cite{ben2010user}. \\
+
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.35\textwidth]{./img/kernel1.png}
+     \caption{\footnotesize{Modeular framework of Kernel methods }}
+    \label{fig:Kernel}
+\end{figure} 
+
+
+
+In recent years, SVMs are widely used in bio-informatics \cite{furey2000support,osuna1997training,guyon2002gene} and other disciplines due to its ability to accurately deal with high dimensional data\cite{joachims1998text}. In marine environments, researchers have proposed a method for detection of oil spills in SAR images, using SVM  as a classifier. The result of this research has shown that SVM has better performance on SAR image when using texture analysis and decomposition algorithm in various steps of the SVM algorithm. Texture analysis will help to reduce noise in SAR image \cite{matkan2013oil}.
+
+
+
