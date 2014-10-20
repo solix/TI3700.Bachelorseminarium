@@ -11,3 +11,7 @@ SVM works better than MLP for the off-line signature recognition. The comparison
 SVM also outperforms to MLP, in Wind speed prediction. The comparison is done using a wind speed dataset that cover a 12 years between 1970-1982. Dataset is divided into three parts: training, test and validation sets. The output result shos that SVM outperforms MLP on all flanks resulting in the lower MSE (MLP is 0.0090 while it is 0.0078) \cite{Mohandes2004939}.
 
 In oil spill detection, the datasets are imbalanced, in which most instances belong to a larger class (lookalikes) and very few instances to a smaller class (oil spills). Lack of instances in minority class will cause SVM suffer from biased decision boundary and prediction performance, however combining SVM with an over-sampling and under-sampling technique will make SVM outperform other classifiers\cite{liu2006boosting}.
+
+
+%Verplaatst vanuit Andys stuk
+Another attempt has been made to compare different classifiers for oil spill detection.\cite{Xu201414} Here they experienced an opposite result. Out of seven classifiers, the MLP was found to perform the worst by $14.8$ percentage points. The results indicated that the additional flexibility provided by SVM and MLP does not necessarily improve the predictive performance compared to less flexible methods. Both tend to over fit the dataset on small-sized training samples and could not generalize well. 
