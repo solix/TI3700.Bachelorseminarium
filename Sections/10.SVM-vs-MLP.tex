@@ -6,41 +6,8 @@
 %One study compared SVM, MLP and many other classifiers \cite{Xu201414}. Here they experienced that SVM outperformed MLP. MLP performed the worst by $14.8$\%. The results indicated that the additional flexibility provided by SVM and MLP does not necessarily improve the predictive performance compared to less flexible methods. Both tend to over fit the data set in small-sized training samples and could not generalize well. 
 
 %SOHEILS PIECE STARTS HERE
-
-%As is, a few comments.
-%How does this first sentence contribute? Both classifiers have already been introduced in the summary section. Furthermore "lots of potential to truthfully predict classification solutions in various classifications problems" basically makes them classifiers, which was already known.
-%Reply from Soheil: the goal is to theritically compare their performance since only two article use SVM and the rest MLP
-%Reply Thomas: But this first sentence doesnt say that.
-SVM and MLP are two popular classifiers that have lots of potential to truthfully predict classification solutions in various classifications problems\cite{Moavenian20103088,Zanaty2012177}. 
-%Next sentence is true for every 2 things that are compared. 
-%Reply from Soheil: True, I think it good to mention that again.
-%Reply Thomas: Matter of opinion, but we will stick with your plan
-If a comparison is done theoretically then SVM and MLP have their own distinguishing advantages. 
-%This piece was copy pasted from SVM summary and was also a bit unclear there.
-%Reply Soheil: Removed from this section, I personally I don't think is unclear, Also jesse didn't commented anything on this, I suggest to keep it. 
-%Reply Thomas: I still think strong foundational theory is a irrelevant and vague term, but ok.
-SVM classifiers have a strong foundational theory and need less memory to store the predictive model; Even when the training sample has some bias, If the right parameters are chosen for SVM, then it can be robust\cite{auria2008support} 
-%Are these few advantages? Are these the only advantages? Reply from Soheil: this is the distinguishing advantages , advantages are many but overlaps with SVM since both are under supervised learning catagory
-
-but the advantages of MLP are not as few as SVM. 
-%Interesting, it would need a bit more explanation if we intend to use it though. How does this attribute contribute to oil spill detection? 
-%Reply from Soheil:  Image recognition is proportionally related to remote sensing and it can be complex. 
-%Reply Thomas: But do we use the stochastic property anywhere in oil spill detection? If so, please cite that in the future.
-MLPs are popular in machine learning solutions such as speech recognition, image recognition because of their ability to solve problems stochastically, meaning that it allows user to get an approximate solution for very complex problems like fitness approximation\cite{jin2005neural}. 
-Here we will look closely at SVM and MLP performance using real world dataset in remote sensing.\\
-
-%Are SVM classifiers less known than MLP? Any proof? Does it make it difficult to compare them?
-%Reply From Soheil: As far as I surfed in Science Direct and Scholar. Many uses MLP in remote sensing community, that is why it's less known. let's put it that way, if something works fine why use another classifier? that's why most uses MLP. 
-%Reply Thomas: I understand the reasoning but we need hard evidence and citations to make such a statement. 
-SVM classifiers are less known as MLP in the remote sensing community, That makes it difficult to make a direct comparison between the two. 
-%You are drawing a conclusion that MLP has higher accuracy than SVM by saying "SVM accuracy CAN be as good as MLP"
-%Soheil's Reply: Yes, thats why comparison between is quiet difficult, most classifiers depend upon the choice of their algorithm that feeded into them. thats why saying genrally SVM is better or worst is a subjective matter.
-%Reply Thomas: I understand that, but saying "SVM can be as good as MLP" suggests that MLP is usually better, of which we have no evidence.
-However SVM's accuracy in detecting oil spills can be as good as MLP. A study has shown that the performance of SVM is exceeding if using the right kernel algorithm inside SVM \cite{liu2006boosting}. On the other hand using MLP in remote sensing is widely suggested by researchers\cite{Mera201472,Brekke200595,fingas2014review}. According to their studies done In oil spill detection using SAR images, MLP classifiers with various design architects is proposed. 
-%This next piece is awesome :D
-%Reply from Soheil : This is drawn from only article that tried to proof why using MLP
-%Reply Thomas: I actually read liu2006boosting and it says nothing about why you should choose MLP over SVM. If you have a citation please add it, otherwise it is an empty statement.
-One of the reasons behind choosing MLP over an SVM classifier is because the data sets are imbalanced and scarce, in which most instances belong to a larger class (look alikes) and very few instances of a smaller class (oil spills). Lack of instances in minority class will cause SVM suffer from biased decision boundary and prediction performance. A solution is proposed for solving this problem. 
+ 
+SVM classifiers are less known as MLP in the remote sensing community, That makes it difficult to make a direct comparison between the two. However SVM's accuracy in detecting oil spills can be as good as MLP. A study has shown that the performance of SVM is exceeding if using the right kernel algorithm inside SVM \cite{liu2006boosting}. On the other hand using MLP in remote sensing is widely suggested by researchers\cite{Mera201472,Brekke200595,fingas2014review}. According to their studies done In oil spill detection using SAR images, MLP classifiers with various design architects is proposed.One of the reasons behind choosing MLP over an SVM classifier is because the data sets are imbalanced and scarce, in which most instances belong to a larger class (look alikes) and very few instances of a smaller class (oil spills). Lack of instances in minority class will cause SVM suffer from biased decision boundary and prediction performance. A solution is proposed for solving this problem. 
 %This research was done on a different field than oil spill detection in SAR images. We have no evidence that oversampling and undersampling will make SVM outperform other classifiers in oil spill detection. Also, if we define other as potato, this is always true. Because other is such a vague term, SVM always out performs other classifiers.
 Combining SVM with an over-sampling and under-sampling technique will make SVM outperform other classifiers\cite{liu2006boosting}.
 
