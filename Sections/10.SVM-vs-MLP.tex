@@ -1,23 +1,9 @@
-%SUGGESTED REWRITTEN - Not complete
-%Comparing these two classifiers theoretically we see the following: SVM and MLP are both classifiers that handle complex non-linear data well. They are both dependent on their model (the parameters for SVM and the structure for MLP) to function optimally. Both have been used for similar problems (e.g. SAR, bioinformatics, medical data analysis, pattern recognition \cite{Moavenian20103088, jin2005neural}). Neither is particularly good at handling noise, which is often present in SAR images, so both also have increased accuracy with preprocessing. Also, it has been shown that both are prone to over fitting.%citation here
-
-%Looking at the differences we mainly see that MLP requires more memory than SVM. This is not really relevant to oil spill detection so the main question remains: Which one is the most accurate.
-
-%One study compared SVM, MLP and many other classifiers \cite{Xu201414}. Here they experienced that SVM outperformed MLP. MLP performed the worst by $14.8$\%. The results indicated that the additional flexibility provided by SVM and MLP does not necessarily improve the predictive performance compared to less flexible methods. Both tend to over fit the data set in small-sized training samples and could not generalize well. 
-
-%I copy pasted this part and it needs editting. My bad...
-%Another attempt has been made to compare different classifiers for oil spill detection.\cite{Xu201414} Here they experienced an opposite result. Out of seven classifiers, the MLP was found to perform the worst by $14.8$ percentage points. The results indicated that the additional flexibility provided by SVM and MLP does not necessarily improve the predictive performance compared to less flexible methods. Both tend to over fit the data set in small-sized training samples and could not generalize well. 
-
-%SOHEILS PIECE STARTS HERE
- 
-SVM classifiers are less known as MLP in the remote sensing community. That makes it difficult to make a direct comparison between the two. Due to the popularity of MLP in oil spill detection, there are very few researches known trying to compare SVM's accuracy versus MLP in detecting oil spills.\\ 
+SVM classifiers are less known as MLP in the remote sensing community. That makes it difficult to make a comparison between the two. Due to the popularity of MLP in oil spill detection, there are very few researches known trying to compare SVMs' accuracy with MLPs' in detecting oil spills.\\ 
 
 According to one of the studies done in classifying Oil Fluorescence Spectra, a comparison between support vector machine (SVM) and artificial neural networks (ANN) is performed \cite{almhdi2007classification}. There they try to examine these two classifiers to examine crude oils, heavy refined oil, and sludge oils; The result shows that both ANNs and SVMs prove to be reliable and fast. The SVM was preferred because the SVM method has proven to be more stable than ANN.\\
 
+Another study shows SVM and MLP doing about equally bad in a comparison study with seven classifiers \cite{Xu201414}. Both did significantly worse than other classifiers. SVM slightly outperformed MLP, especially after preprocessing was done. 
 
-On the other hand using MLP in remote sensing is widely suggested by researchers\cite{Mera201472,Brekke200595,fingas2014review}. According to their studies done In oil spill detection using SAR images, MLP classifiers with various design architects is proposed. One of the reasons behind choosing MLP over an SVM classifier is because the data sets are imbalanced and scarce, in which most instances belong to a larger class (look alikes) and very few instances of a smaller class (oil spills). Lack of instances in minority class will cause SVM suffer from biased decision boundary and prediction performance. A solution is proposed for solving this problem. 
+On the other hand, using MLP in remote sensing is widely suggested by researchers\cite{Mera201472,Brekke200595,fingas2014review}. Various architectures have been used and tested and the scientific community seems to trust MLP capabilities. One of the reasons behind choosing MLP over an SVM classifier is that data sets are imbalanced and scarce. Most instances belong to a larger class (look alikes) and very few instances of a smaller class (oil spills). Lack of instances in minority class will cause SVM suffer from biased decision boundary and prediction performance. But there are techniques to make SVM more viable in these situations. For example, combining SVM with an over-sampling and under-sampling technique can boost SVM performance \cite{liu2006boosting}.
 
-%This research was done on a different field than oil spill detection in SAR images. We have no evidence that oversampling and undersampling will make SVM outperform other classifiers in oil spill detection. Also, if we define other as potato, this is always true. Because other is such a vague term, SVM always out performs other classifiers.
-Combining SVM with an over-sampling and under-sampling technique will make SVM outperform other classifiers\cite{liu2006boosting}.
-
-
+MLP and SVM seem to be classifiers that are proper rivals. Theoretically, they both handle complex data well. Empirically they both show decent accuracy in different circumstances. These circumstances are hard to derive however, as not every study shows their exact design decisions. SVM is a younger technique, and this is reflected in the strong preference for MLP over SVM in the oil spill detection community. 
