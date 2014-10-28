@@ -18,64 +18,9 @@
 \documentclass{beamer}
 
 \mode<presentation> {
-
-% The Beamer class comes with a number of default slide themes
-% which change the colors and layouts of slides. Below this is a list
-% of all the themes, uncomment each in turn to see what they look like.
-
-%\usetheme{default}
-%\usetheme{AnnArbor}
-%\usetheme{Antibes}
-%\usetheme{Bergen}
-%\usetheme{Berkeley}
-%\usetheme{Berlin}
-%\usetheme{Boadilla}
-%\usetheme{CambridgeUS}
-%\usetheme{Copenhagen}
-%\usetheme{Darmstadt}
-%\usetheme{Dresden}
-%\usetheme{Frankfurt}
-%\usetheme{Goettingen}
-%\usetheme{Hannover}
-%\usetheme{Ilmenau}
-%\usetheme{JuanLesPins}
-%\usetheme{Luebeck}
 \usetheme{Madrid}
-%\usetheme{Malmoe}
-%\usetheme{Marburg}
-%\usetheme{Montpellier}
-%\usetheme{PaloAlto}
-%\usetheme{Pittsburgh}
-%\usetheme{Rochester}
-%\usetheme{Singapore}
-%\usetheme{Szeged}
-%\usetheme{Warsaw}
-
-% As well as themes, the Beamer class has a number of color themes
-% for any slide theme. Uncomment each of these in turn to see how it
-% changes the colors of your current slide theme.
-
-%\usecolortheme{albatross}
-%\usecolortheme{beaver}
-%\usecolortheme{beetle}
-%\usecolortheme{crane}
-%\usecolortheme{dolphin}
-%\usecolortheme{dove}
-%\usecolortheme{fly}
-%\usecolortheme{lily}
-%\usecolortheme{orchid}
-%\usecolortheme{rose}
-%\usecolortheme{seagull}
-%\usecolortheme{seahorse}
-%\usecolortheme{whale}
-%\usecolortheme{wolverine}
-
-%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
-%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
-
-%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
-
+\usepackage{adjustbox}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
@@ -91,8 +36,8 @@ Delft University of Technology \\ % Your institution for the title page
 \medskip
 %\textit{john@smith.com} % Your email address
 }
-\date{\today} % Date, can be changed to a custom date
-\author{A.S.Y.Chiu\\ T.P.van Helden\\S.S.Jahanshahi} % Your name
+\date{30$^{th}$ October 2014} 
+\author{Andy\\ Thomas\\ Soheil} % Your name
 
 \begin{document}
 
@@ -104,16 +49,14 @@ Delft University of Technology \\ % Your institution for the title page
 \frametitle{Overview} % Table of contents slide, comment this block out to remove it
 \begin{enumerate}
 	\item Introduction
-	\item SAR preprocessing
-	\item Features
+	\item Oil Spill Detection
+	\item SAR Images	
+	\item Typical Problems
+	\item SAR Preprocessing
+	\item Features \& Selection
 	\item Summary of Classifiers 
-	\begin{itemize}
-		\item Support Vector Machine
-		\item Multi Layer Perceptron
-		\item Descision Trees
-		
-	\end{itemize}
-	\item Compariosn of Classifiers
+	\item Our Research
+	\item Recommendations \& Conclusion
 \end{enumerate}
 
 %\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
@@ -131,7 +74,7 @@ Delft University of Technology \\ % Your institution for the title page
 
 \begin{frame}
 \frametitle{Introduction}
-\begin{minipage}[h]{0.33\textwidth}
+\begin{minipage}[r]{0.33\textwidth}
 \begin{figure}
 	\centering
     \includegraphics[width=60mm,scale=1]{./img/mex.jpg}
@@ -170,7 +113,24 @@ Delft University of Technology \\ % Your institution for the title page
 
 \end{itemize}
 \end{frame}
-%----------------
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Typical problems}
+\begin{itemize}
+	\item Lookalikes
+	\item Imbalanced dataset
+	\item Data is scarce
+	\item Noise
+	\item Gathering contextual features
+	
+\end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+
 \begin{frame}
 \frametitle{SAR preprocessing}
 \begin{figure}
@@ -184,8 +144,8 @@ Delft University of Technology \\ % Your institution for the title page
 \begin{frame}
 \frametitle{Features}
 \begin{itemize}
-	\item What is features?
-	\item Type of features \begin{itemize}
+	\item What are features?
+	\item Types of features \begin{itemize}
 					\item Geometrical %area,perimeter, complexity
 					\item Physical %mean, max backscatter value
 					\item Texture %mean,contrast
@@ -202,7 +162,7 @@ Delft University of Technology \\ % Your institution for the title page
 \frametitle{Feature Selection}
 \begin{itemize}
 	\item Choosing features
-	\item Overfitting 
+	\item Over fitting 
 	\item Curse of dimensionality
 \end{itemize}
 \begin{figure}
@@ -249,7 +209,7 @@ Delft University of Technology \\ % Your institution for the title page
 \frametitle{Perceptron}
 \begin{figure}
 	\centering
-    \includegraphics[width=90mm,scale=1]{./img/perceptron.png}
+    \includegraphics[width=\textwidth]{./img/perceptron.png}
 \end{figure}
 
 \end{frame}
@@ -265,24 +225,99 @@ Delft University of Technology \\ % Your institution for the title page
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Comparison of classifiers}
+\frametitle{Research goals}
 \begin{itemize}
-	\item Free lunch theorem
-	\item Criteria for comparison %accuracy performance
+	\item Accuracy comparison
+	\item Classifier characteristics vs field specific problems
 	 
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
+\begin{frame}
+\frametitle{Difficulties researching}
+\begin{itemize}
+	\item SVM was hardly used
+	\item Not all details were specified
+	\item Use of different datasets (unverified samples)
+	\item Use of different features
+	\item Free lunch theorem	 
 
+\end{itemize}
+\end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\Huge{\centerline{The End}}
+\frametitle{Fail}
+
+\centerline{We did not manage to compare our three classifiers}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{The best classifier?}
+\begin{itemize}
+	\item Different accuracy in different situations
+	\item SVM and MLP for large datasets
+	\item SVM and MLP for non-linear cases
+	\item DT for small datasets
+	\item DT easiest to interpret
+	
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Recommendations}
+\begin{itemize}
+	\item More research on SVM
+	\item More research on Random Forest
+	\item Shared database
+	\item Bagging
+	\item Image fusion
+
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Summary}
+\begin{itemize}
+	\item Oil spill detection
+	\item Classifiers
+	\item Research
+	\item Difficulties
+	\item Recommendations
+
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+
 \end{frame}
 
 %----------------------------------------------------------------------------------------
+\begin{frame}
+
+\includegraphics[width=\textwidth]{./img/table.png}
+
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+In case you need our credentials
+
+A.S.Y.Chiu 1519360\\ T.P.van Helden 4106725\\ S.S.Jahanshahi 
+
+
+\end{frame}
+%------------------------------------------------
 
 \end{document} 
