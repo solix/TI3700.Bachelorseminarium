@@ -1,6 +1,0 @@
-In Mera, Cotos, Varela-Pet, Rodriguez & Caro (2014) a Decision Support System to detect oil spills has been created. For classification both a neural network and a decision tree are used. Since both classifiers are designed and tested using the same data, a comparison on accuracy can be made. The neural network appears to outperform the decision tree slightly.
-
---------------------------------------------------
-
-Mera, D,. Cotos, J.M., Varela-Pet, J. Rodriguez, P.G., & Caro, A. (2014). Automatic decision support system based on SAR data for oil spill detection. Computers & Geosciences, 72, 184–191.
-
